@@ -1,0 +1,18 @@
+h1{
+    color: var(--text-color);
+}
+
+
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 40px !important;
+        margin: 160px 110px !important;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 30px !important;
+        margin: 100px 50px !important;
+    }
+}

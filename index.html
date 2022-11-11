@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto realizado para el Bootcamp de Ironhack de Frontend, Barcelona">
+    <meta name="keywords" content="Ironhack, bootcamp, frontend, course, Barcelona">
+    <meta name="author" content="Laura Adán">
+    <meta name="copyright" content="Laura Adán">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="img/favicon/ironhack.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Home_Mid-term-project_Adan_Laura</title>
+</head>
+<body>
+
+<!--  ZONA DEL NAV -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="./img/logos/circle.svg" width="60" height="28" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="120"
+        data-aos-delay="500" data-aos-easing="ease">
+    </a>
+
+        <a role="button" class="navbar-burger hide" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu nav">
+        <div class="navbar-start">
+            <a class="navbar-item active" href="index.html">Home</a>
+            <a class="navbar-item" href="projects.html">Projects</a>
+            <a class="navbar-item" href="services.html">Services</a>
+        </div>
+
+        <img src="img/moon.png" alt="luna" id="icono" onclick="darkMode()">
+        
+        <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ZONA DEL HEADER -->
+<header id="header">
+        <div class="headerText">
+            <h1>Empower Your Bussiness With Stunning Design!</h1>
+            <p>Circle is a digital design and development studio.
+                We design and develop astonishing websites and mobile apps.
+            </p>
+            <div class="headerTextBttns">
+              <a class="headerbttnTwo" href="projects.html">See our work</a>
+                <a class="headerbttnOne" href="contact.html">Get in touch</a>
+            </div>
+        </div>
+
+        <div class="headerImg">
+            <img src="img/hero-section/hero-image_complete.png" alt="imgHeader" class="imgOne">
+            <img src="img/hero-section/hero-image.png" alt="imgHeader" class="imgTwo">
+        </div>
+</header>
+
+<!--  ZONA DE LOGOS -->
+
+<section id="logos">
+        <img src="img/logos/airbnb-logo.svg" alt="logo AirBnb" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="120"
+        data-aos-delay="500" data-aos-easing="ease">
+        <img src="img/logos/google-logo.svg" alt="logo Google" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="120"
+        data-aos-delay="500" data-aos-easing="ease">
+        <img src="img/logos/microsoft-logo.svg" alt="logo Microsoft" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="120"
+        data-aos-delay="500" data-aos-easing="ease">
+        <img src="img/logos/fedex-logo.svg" alt="logo Fedex" data-aos="fade-up"data-aos-duration="1000" data-aos-offset="120"
+        data-aos-delay="500" data-aos-easing="ease">
+        <img src="img/logos/amazon-logo.svg" class="logoAmazon" alt="logo Amazon" data-aos="fade-up"data-aos-duration="1000" data-aos-offset="120"
+        data-aos-delay="500" data-aos-easing="ease">
+</section>
+
+<!--  ZONA DE RECENT PROJECTS -->
+<section id="recentProjects">
+    <h3 class="recentProjectsTitle">Recent Projects</h3>
+    <div class="recentProjectsContainer">
+
+        <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3 cardImg01">
+                <!-- Aqui va la imagen renderizada -->
+              </figure> 
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 card01"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="card01-1"></p>
+              </div>
+              <a href="projects.html">Learn More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/projects-section/2.jpg" alt="Projects Section Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 card02"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="card02-2"></p>
+              </div>
+              <a href="projects.html">Learn More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/projects-section/3.jpg" alt="Projects Section Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 card03"></p>
+                </div>
+              </div>
+              <div class="content">
+                <p class="card03-3"></p>
+              </div>
+              <a href="projects.html">Learn More</a>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!--  ZONA DE BANNER TESTIMONIOS -->
+<section id="banner" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="120"
+data-aos-delay="500" data-aos-easing="ease">
+    <div class="bannerImgOne">
+        <img src="img/testimonial-section/memoji-1.png" alt="Emoji testimonial-section">
+        <img src="img/testimonial-section/memoji-3.png" alt="Emoji testimonial-section">
+    </div>
+    <div class="bannerText">
+        <h3>Hear What Our Clients Have to Say</h3>
+        <p class="bannerTextP">“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+        <div class="bannerTextTarget">
+            <img src="img/testimonial-section/profile.png" alt="Img testimonial-section">
+            <div class="bannerTextTargetText">
+                <p class="targetName">Kristin Watson</p>
+                <p class="targetWork">Booking.com</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bannerImgTwo">
+        <img src="img/testimonial-section/memoji-2.png" alt="Emoji testimonial-section">
+        <img src="img/testimonial-section/memoji-4.png" alt="Emoji testimonial-section">
+    </div>
+</section>
+
+<!--  ZONA DE SERVICIOS -->
+
+<section id="services">
+    <h3 class="servicesTittle">Our Services</h3>
+    <div class="servicesContainer">
+
+        <div class="card container-services">
+            <div class="card-image card-services">
+                <img src="img/services-section/01.png" alt="Services Image">
+            </div>
+            <div class="card-content card-content-services">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">User Interface Design</p>
+                </div>
+              </div>
+              <div class="content">Circle provides you with a stunning user interface design that is accessible to everyone.</div>
+            </div>
+            <a href="services.html">Learn More</a>
+          </div>
+
+          <div class="card container-services">
+            <div class="card-image card-services">
+                <img src="img/services-section/02.png" alt="Services Image">
+            </div>
+            <div class="card-content card-content-services">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">User Experience Design</p>
+                </div>
+              </div>
+              <div class="content">Circle always focuses on delivering the best user experience to your customers.</div>
+            </div>
+            <a href="services.html">Learn More</a>
+          </div>
+
+          <div class="card container-services">
+            <div class="card-image card-services">
+                <img src="img/services-section/03.png" alt="Services Image">
+            </div>
+            <div class="card-content card-content-services">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Application Development</p>
+                </div>
+              </div>
+              <div class="content">We develop high-quality mobile and web applications using the latest technology stack.</div>
+            </div>
+            <a href="services.html">Learn More</a>
+          </div>
+    </div>
+</section>
+
+<!--  ZONA DE BANNER QUESTIONS -->
+<section id="bannerQuestions">
+  <div class="bannerQuestionsText">
+      <h3>Do you have any questions?</h3>
+      <p class="bannerQuestionsTextP">Let us help you!</p>
+      <form action="post" id="inputQuestions">
+          <div class="inputSuscribe" id="inputQuestions">
+              <input type="email" name="email" value="" class="inputQuestions" id="emailQuestions" placeholder="Enter your email address"/>
+              <input class="btnQuestions" id="submit" name="submit" type="submit" value="Submit">
+          </div>
+      </form>
+  </div>
+</section>
+
+<!--  ZONA DE FOOTER -->
+<footer id="footer">
+    <div class="footerContainer">
+        <div class="columnOne">
+            <img src="img/logos/circle.svg" alt="Logo Circle">
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+        </div>
+        <div class="columnTwo">
+            <div class="one"><a href="services.html">Team</a></div>
+            <div class="two"><a href="services.html">Services</a></div>
+            <div class="three"><a href="services.html">About Us</a></div>
+            <div class="four"><a href="services.html">Press</a></div>
+            <div class="five"><a href="projects.html">Projects</a></div>
+            <div class="six"><a href="services.html">Privacy Policy</a></div>
+        </div>
+    </div>
+</footer>
+
+ <!-- Script libreria AOS -->
+ <script>AOS.init();</script>
+
+ <!-- Script de menu nav responsive -->
+<script src="js/menu_nav_responsive.js"></script>
+
+<!--  Script para fetch home.js -->
+<script src="js/home.js"></script>
+
+<!--  Script para evitar refresh y mostrar en consola el resultado en pantalla del formulario de contacto -->
+<script src="js/questions.js"></script>
+
+
+</body>
+</html>
+

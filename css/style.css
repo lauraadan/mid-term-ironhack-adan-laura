@@ -1,0 +1,385 @@
+/*  Hoja de estilos generales para toda la web y para secciones que se repiten en todas o varias paginas */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue01: #072AC8;
+    --blue02: #43D2FF;
+    --blue03: #A2D6F9;
+    --blue04: #D1EDFF;
+    --blue05: #292E47;
+    --blue06: #6b708D;
+    --blue07: #F2F4FC;
+    --blue08: #ECF7FF;
+    --yellow: #ffC600;
+    --active: #0098af;
+    /* Variables iguales que las de arriba pero usadas para que la funcion de darkmode funcione correctamente  */
+    --body-bg:  #f2f4fc;
+    --text-color: #6b708D;
+    --text-color2: #072AC8;
+    --text-color3: #292E47;
+    --text-colorHover:#ffC600;
+    --inputForm: #6b708d32;
+    --buttons: #072AC8;
+    --textButtons: #f2f4fc;
+    --textNavBar: #6b708D;
+}
+
+.darkTheme
+{
+    --body-bg:  #1b1b1c;
+    --text-color: #ffffff;
+    --text-color2: #a9baba;
+    --text-color3: #b2b4c0;
+    --text-colorHover: #ffC600;
+    --inputForm: #f8eeee6e;
+    --buttons: #ffC600;
+    --textButtons: #292E47;
+    --textNavBar: #eaecf4;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 70px 0px !important;
+    overflow-x: hidden;
+    background-color: var(--body-bg);
+}
+
+#icono
+{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.inputError{
+    border-color: rgb(180, 14, 14) !important;
+}
+
+
+/*Cambio de los estilos predefinidos del nav con el css de Bulma */
+.navbar{
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--body-bg) !important;
+}
+.navbar-menu {
+    margin-left: 300px;
+    align-items: center !important;
+}
+
+.navbar-item {
+    margin-right: 40px;
+    font-weight: 700;
+    padding: 0rem 0rem !important;
+    font-size: 17px !important;
+    color: var(--textNavBar) !important;
+}
+.active
+{
+  color: var(--active) !important;
+}
+
+.buttons:last-child {
+    margin-bottom: 0rem !important;
+}
+
+.navbar-item:hover {
+    background-color: transparent !important;
+    color: var(--text-colorHover) !important;
+}
+.button.is-primary {
+    background-color: var(--buttons) !important;
+    color: var(--textButtons) !important;
+    border-radius: 0px !important;
+    border-width: 18px;
+}
+.button.is-primary:hover {
+    background-color: var(--yellow) !important;
+    color: var(--blue05) !important;
+    transition-delay: 0.3s !important;
+    transform: scale(1.1) !important;
+}
+.hide {
+    font-size: 1.5em;
+    color: var(--amarillo);
+    cursor: pointer;
+    display: none;
+}
+/*  ZONA DE BANNER QUESTIONS EN HOME Y PROJECT PAGE */
+
+#bannerQuestions{
+    height: 450px;
+    background-color: var(--yellow);
+    max-width: 1700px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.bannerQuestionsText h3
+{
+    font-size: 40px;
+    color:var(--blue05);
+    font-weight: 800;
+    text-align: center;
+}
+
+.bannerQuestionsText .bannerQuestionsTextP{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue05);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.inputSuscribe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputQuestions{
+    width: 350px;
+    height: 55px;
+    border-style: none;
+    padding-left: 15px;
+}
+
+.questionError{
+    border-color: rgb(180, 14, 14);
+    border-style: inset;
+}
+
+.inputSuscribe .btnQuestions{
+    background-color: var(--blue01);
+    padding: 15px 50px;
+    color: #fff;
+    border-style: none;
+    border-color: none;
+}
+
+.inputSuscribe .btnQuestions:hover{
+    color: var(--yellow);
+    transform: scale(1.1);
+    transition-delay: 0.15s;
+}
+
+.inputSuscribe input::placeholder{
+   font-weight: 600;
+}
+
+/* ZONA DEL FOOTER PARA TODAS LAS PAGINAS*/
+
+#footer{
+    height: auto;
+    margin-top: 100px;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.columnOne{
+    width: 40%;
+}
+
+.columnOne img
+{
+    width: 100px;
+    height: 30px;
+}
+
+.columnOne p{
+    color: var(--text-color);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.columnTwo {
+    display: grid;
+    grid-auto-rows: minmax(60px, auto);
+}
+.one {
+    grid-column: 1 / 1;
+}
+.two {
+    grid-column: 2 / 2;
+}
+.three {
+    grid-column: 3 / 3;
+
+}
+.four {
+    grid-column: 1 /1 ;
+    grid-row: 2;
+}
+.five {
+    grid-column: 2 / 2;
+    grid-row: 2;
+}
+.six {
+    grid-column: 3 / 3;
+    grid-row: 2;
+}
+
+.columnTwo a{
+    color: var(--text-color2);
+    font-weight: 600;
+}
+
+.columnTwo a:hover{
+    color: var(--text-colorHover);
+}
+
+/*  MEDIA QUERIES */
+
+@media screen and (max-width: 1023px) {
+    body{
+        padding: 10px 0px !important;
+    }
+    #icono
+    {
+        margin: 10px 0px;
+    }
+    .navbar {
+        padding: 0px 50px;
+    }
+    .navbar-item img {
+        max-height: 5rem !important;
+    }
+    .navbar-item {
+        color: var(--textNavBar) !important;
+    }
+    .active {
+        color: var(--active) !important;
+    }
+    .navbar-item:hover {
+        background-color: transparent !important;
+        color: var(--yellow) !important;
+    }
+    #bannerQuestions {
+        height: 400px;
+    }
+    .bannerQuestionsText {
+        width: 80%;
+    }
+    .bannerQuestionsText h3 {
+        font-size: 30px;
+    }
+    #footer {
+        padding: 0px 100px;
+    }
+    .columnOne {
+        width: 60%;
+    }
+    .columnTwo {
+        grid-auto-rows: minmax(40px, auto);
+    }
+    .hide{
+        display: block;
+        font-size: 2em;
+        margin: auto;        
+    }
+    .nav {
+        margin-left: 0px !important;
+        padding: 1.5rem 01.5rem !important;
+        margin-top: 15px;
+        background-color: #b2b4c024;
+    }
+    .navbar-item, .navbar-link {
+        line-height: 2.5em !important;
+    }
+    .buttons .button {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar {
+        padding: 0px 60px;
+    }
+    #footer {
+        padding: 0px 60px;
+    }
+    .footerContainer {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+    .columnOne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .columnTwo{
+        width: 100%;
+        justify-items: center;
+        justify-content: space-around;
+        margin: 30px 0px;
+    }
+    .columnOne img {
+        width: 20%;
+    }
+    .inputSuscribe {
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .bannerQuestionsText .bannerQuestionsTextP {
+        margin-bottom: 0px;
+    }
+    #bannerQuestions {
+        height: 480px;
+    }
+    .inputSuscribe .btnQuestions  {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .navbar {
+        padding: 0px 30px;
+    }
+    #footer {
+        padding: 0px 30px;
+        margin-top: 50px;
+    }
+    .columnTwo {
+        display: flex;
+        grid-auto-rows: minmax(70px, auto);
+        flex-direction: column;
+    }
+    #bannerQuestions {
+        margin: 0px 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .inputSuscribe .inputQuestions {
+        width: 250px;
+    }
+    .bannerQuestionsText h3 {
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+}
