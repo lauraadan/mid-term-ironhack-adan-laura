@@ -3,7 +3,7 @@
 
 LINKS
 
-- GITHUB: https://github.com/lauraadan/Mid-term-project_Adan_Laura.git
+- GITHUB: https://github.com/lauraadan/mid-term-ironhack-adan-laura
 
-- GITHUB PAGES: https://lauraadan.github.io/Mid-term-project_Adan_Laura/
+- GITHUB PAGES: https://lauraadan.github.io/mid-term-ironhack-adan-laura/
 
